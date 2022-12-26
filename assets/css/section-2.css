@@ -1,0 +1,24 @@
+.section-2 {
+  width: 100vw;
+  height: 100vh;
+}
+.section-2 .section-bg {
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.section-2 .section-bg .section2Content1 {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.section-2 .section-bg .section2Content1 .section2TextWrapper .section2Tittle {
+  color: #fff;
+}
+.section-2 .section-bg .section2Content1 .section2Img {
+  width: 100px;
+}

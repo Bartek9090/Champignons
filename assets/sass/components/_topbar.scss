@@ -1,0 +1,34 @@
+.topbar {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgb(22, 22, 22, 0.9);
+  z-index: 100;
+  display: none;
+  align-items: center;
+  justify-content: space-around;
+  .menu {
+    .menu-item {
+      .menu-link {
+        display: flex;
+        text-align: center;
+        color: #fff;
+        font-size: 2.2rem;
+        letter-spacing: 1.5px;
+        cursor: pointer;
+        &:hover{
+          color: $primaryColor;
+  
+        }
+      }
+    }
+ 
+  }
+}
+
+.change  {
+  display: flex;
+  right: 0rem;
+  z-index: 120;
+  transition: right 1.5s;
+}
