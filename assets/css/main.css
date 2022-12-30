@@ -934,69 +934,93 @@ summary {
   }
 }
 
-.aboutUsMain {
+.container-aboutUS {
   width: 100%;
-  height: 100%;
+}
+.container-aboutUS .aboutUsMain {
+  height: calc(100vh - 84px);
+  width: 100%;
   background: linear-gradient(297deg, rgb(16, 18, 24) 18%, rgb(42, 72, 88) 100%);
 }
-.aboutUsMain .aboutUsMainWrapper {
+@media (max-width: 900px) {
+  .container-aboutUS .aboutUsMain {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+  }
+}
+.container-aboutUS .aboutUsMain .aboutUsMainWrapper {
   padding-top: 90px;
 }
-.aboutUsMain .aboutUsMainWrapper .aboutUsHeader {
+.container-aboutUS .aboutUsMain .aboutUsMainWrapper .aboutUsHeader {
   text-align: center;
   font-size: 74px;
   color: #fff;
   text-shadow: 2px 2px 4px #d16565;
   padding: 10px 0 30px 0;
 }
-.aboutUsMain .aboutUsMainWrapper .aboutUsContentWrapper {
+.container-aboutUS .aboutUsMain .aboutUsMainWrapper .aboutUsContentWrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 8px 0;
 }
 @media (max-width: 900px) {
-  .aboutUsMain .aboutUsMainWrapper .aboutUsContentWrapper {
+  .container-aboutUS .aboutUsMain .aboutUsMainWrapper .aboutUsContentWrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    height: auto;
   }
 }
-.aboutUsMain .aboutUsMainWrapper .aboutUsContentWrapper .AboutUsImgWrapper {
+.container-aboutUS .aboutUsMain .aboutUsMainWrapper .aboutUsContentWrapper .AboutUsImgWrapper {
   width: 50%;
 }
 @media (max-width: 900px) {
-  .aboutUsMain .aboutUsMainWrapper .aboutUsContentWrapper .AboutUsImgWrapper {
+  .container-aboutUS .aboutUsMain .aboutUsMainWrapper .aboutUsContentWrapper .AboutUsImgWrapper {
     width: 100%;
     padding: 0 20px;
   }
 }
-.aboutUsMain .aboutUsMainWrapper .aboutUsContentWrapper .AboutUsImgWrapper img {
+.container-aboutUS .aboutUsMain .aboutUsMainWrapper .aboutUsContentWrapper .AboutUsImgWrapper img {
   margin-top: 10px;
   width: 100%;
   height: 80%;
 }
-.aboutUsMain .aboutUsMainWrapper .aboutUsContentWrapper .aboutUsWrapperText {
+.container-aboutUS .aboutUsMain .aboutUsMainWrapper .aboutUsContentWrapper .aboutUsWrapperText {
   width: 100%;
   padding: 0 20px;
 }
-.aboutUsMain .aboutUsMainWrapper .aboutUsContentWrapper .aboutUsWrapperText .HeaderContentHeader {
+.container-aboutUS .aboutUsMain .aboutUsMainWrapper .aboutUsContentWrapper .aboutUsWrapperText .HeaderContentHeader {
   color: #fff;
   text-align: center;
   font-size: 50px;
   padding-bottom: 20px;
 }
-.aboutUsMain .aboutUsMainWrapper .aboutUsContentWrapper .aboutUsWrapperText .aboutUsContentText {
+.container-aboutUS .aboutUsMain .aboutUsMainWrapper .aboutUsContentWrapper .aboutUsWrapperText .aboutUsContentText {
   color: #fff;
   letter-spacing: 1px;
   line-height: 25px;
+}
+@media (max-width: 1100px) {
+  .container-aboutUS .aboutUsMain .aboutUsMainWrapper .aboutUsContentWrapper .aboutUsWrapperText .aboutUsContentText {
+    line-height: 20px;
+  }
 }
 
 .main-cointainer-contact {
   width: 100%;
   height: 100%;
+  height: calc(100vh - 84px);
   background: linear-gradient(297deg, rgb(16, 18, 24) 18%, rgb(42, 72, 88) 100%);
+}
+@media (max-width: 1250px) {
+  .main-cointainer-contact {
+    height: 100%;
+  }
 }
 .main-cointainer-contact .contact-main-wrapper {
   padding-top: 90px;
@@ -1019,6 +1043,12 @@ summary {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 .main-cointainer-contact .contactWrapperContent .contact-info {
@@ -1175,7 +1205,10 @@ summary {
   transition: background-color 1.5s;
 }
 .main-cointainer-contact .contact-contact-form .contact-form .form-btn:hover {
-  background-color: rgb(44, 43, 43);
+  -webkit-transition: scale, background-color 0.8s;
+  transition: scale, background-color 0.8s;
+  background-color: #b8740d;
+  color: #fff;
 }
 @media (max-width: 1250px) {
   .main-cointainer-contact .contact-contact-form .contact-form .form-btn {
