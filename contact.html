@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Champignons - Contact</title>
+    <script
+      src="https://kit.fontawesome.com/e24d93588b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="icon"
+      type="img/png"
+      href="assets/img/logo/tinywow_grzyb3_9864678.png"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Josefin+Slab:ital,wght@0,400;0,600;1,300;1,600&family=Mulish:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__logo">
+        <a href="index.html">
+          <img src="assets/img/shroom-logo.webp" alt="company logo" />
+        </a>
+      </div>
+
+      <div class="header__nav">
+        <input type="checkbox" id="hamburger-toggle" />
+        <label for="hamburger-toggle" class="hamburger">
+          <div class="hamburger__line"></div>
+          <div class="hamburger__line"></div>
+          <div class="hamburger__line"></div>
+        </label>
+
+        <nav class="nav">
+          <a href="index.html">Home</a>
+          <a href="products.html">Product</a>
+          <a href="about-us.html">About Us</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="section section--contact">
+      <h2>Contact Us</h2>
+
+      <div class="section__subsection section__subsection--contact">
+        <div class="article article--contact">
+          <h3>Address</h3>
+          <p>
+            Champignons breeding<br />
+            Joe Doe
+          </p>
+        </div>
+
+        <div class="article article--contact">
+          <h3>Phone</h3>
+          <a href="tel:+">+48 123 456 789</a>
+        </div>
+
+        <div class="article article--contact">
+          <h3>Email</h3>
+          <a href="mailto:dummyMail@gmail.com">email@email.com</a>
+        </div>
+      </div>
+
+      <div class="section__subsection section__subsection--contact">
+        <form class="form">
+          <div class="form__field">
+            <label for="name">Full Name *</label>
+            <input id="name" type="text" placeholder="Enter Your Name" />
+          </div>
+
+          <div class="form__field">
+            <label for="email">Email *</label>
+            <input id="email" type="email" placeholder="Enter Your Email" />
+          </div>
+
+          <div class="form__field">
+            <label for="phone">Phone</label>
+            <input id="phone" type="text" placeholder="Enter Phone Number" />
+          </div>
+
+          <div class="form__field">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              placeholder="Your Message Here..."
+            ></textarea>
+          </div>
+
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+
+      <div class="section__subsection--map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40167.35670794107!2d20.45107990221444!3d51.00765396324785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47182ce2e10eca2b%3A0x64999a735385b9e6!2zTW5pw7N3!5e0!3m2!1sen!2spl!4v1691653821823!5m2!1sen!2spl"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <h6 class="footer__slogan">Contact Us</h6>
+
+      <p class="copyright">Copyright &copy; Bartek</p>
+    </footer>
+  </body>
+</html>
