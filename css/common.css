@@ -258,3 +258,8 @@ a {
     height: 40vh;
   }
 }
+@media (min-width: 1260px) {
+  .header__logo {
+    width: 3.5rem;
+  }
+}

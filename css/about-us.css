@@ -22,8 +22,6 @@
   .about__content {
     align-items: center;
     flex-direction: row;
-    /* height: 62vh; */
-    /* gap: 6vw; */
   }
 
   .about__content .img-container {
@@ -39,9 +37,6 @@
     flex: 1 0 45%;
   }
 
-  /* .article--about p:first-child {
-    margin-bottom: 2rem;
-  } */
   .article--about p {
     font-size: 18px;
   }
