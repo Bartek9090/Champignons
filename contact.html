@@ -72,21 +72,26 @@
         </div>
       </div>
 
+      <!-- form  -->
+
       <div class="section__subsection section__subsection--contact">
         <form class="form">
-          <div class="form__field">
-            <label for="name">Full Name *</label>
-            <input id="name" type="text" placeholder="Enter Your Name" />
+          <div class="form__field form-box">
+            <label for="username">Full Name *</label>
+            <input id="username" type="text" placeholder="Enter Your Name" />
+            <p class="error-text">error</p>
           </div>
 
-          <div class="form__field">
+          <div class="form__field form-box">
             <label for="email">Email *</label>
             <input id="email" type="email" placeholder="Enter Your Email" />
+            <p class="error-text">error</p>
           </div>
 
-          <div class="form__field">
-            <label for="phone">Phone</label>
+          <div class="form__field form-box">
+            <label for="phone">Phone *</label>
             <input id="phone" type="text" placeholder="Enter Phone Number" />
+            <p class="error-text">error</p>
           </div>
 
           <div class="form__field">
@@ -94,13 +99,23 @@
             <textarea
               id="message"
               placeholder="Your Message Here..."
+              maxlength="450"
             ></textarea>
+            <!-- <p class="error-text">error</p> -->
           </div>
 
-          <input type="submit" value="Submit" />
+          <div class="controll-buttons">
+            <button class="clear">Clear</button>
+            <button class="send">Send</button>
+          </div>
+          <div class="popup">
+            <p>Form has been sended correctly!</p>
+            <button class="close">Close</button>
+          </div>
         </form>
       </div>
 
+      <!-- <input type="submit" value="Submit" /> -->
       <div class="section__subsection--map">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40167.35670794107!2d20.45107990221444!3d51.00765396324785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47182ce2e10eca2b%3A0x64999a735385b9e6!2zTW5pw7N3!5e0!3m2!1sen!2spl!4v1691653821823!5m2!1sen!2spl"
@@ -115,5 +130,7 @@
 
       <p class="copyright">Copyright &copy; Bartek</p>
     </footer>
+
+    <script src="js/validation.js"></script>
   </body>
 </html>
