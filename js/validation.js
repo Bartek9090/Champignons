@@ -1,4 +1,4 @@
-// validation and modal
+// validation and pop up
 
 const username = document.querySelector("#username");
 const email = document.querySelector("#email");
@@ -6,6 +6,7 @@ const phone = document.querySelector("#phone");
 const message = document.querySelector("#message");
 const sendBtn = document.querySelector(".send");
 const clearBtn = document.querySelector(".clear");
+const closeBtn = document.querySelector(".close");
 const popup = document.querySelector(".popup");
 
 const showError = (input, msg) => {
@@ -68,11 +69,12 @@ const checkErrors = () => {
     popup.classList.add("show-popup");
   }
 };
+// close and open pop pup
 
 sendBtn.addEventListener("click", (e) => {
   e.preventDefault();
 
-  checkForm([username, email, phone, message]);
+  checkForm([username, email, phone]);
   checkLength(username, 3);
   checkLength(phone, 8);
   checkEmail(email);
@@ -86,4 +88,9 @@ clearBtn.addEventListener("click", (e) => {
     el.value = "";
     clearError(el);
   });
+});
+
+// close  pop up
+closeBtn.addEventListener("click", () => {
+  popup.classList.remove("show-popup");
 });

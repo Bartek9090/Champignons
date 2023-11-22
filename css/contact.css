@@ -68,7 +68,6 @@ iframe {
   border: none;
   width: 100%;
 }
-/* 11111 */
 
 .form-box.error input .form-box.error .message {
   border: 1px solid red;
@@ -81,12 +80,6 @@ iframe {
   color: #ff0000;
   visibility: hidden;
 }
-/* .form-box .message {
-  margin: 5px 0 0 10px;
-  font-size: 16px;
-  color: #ff0000;
-  visibility: hidden;
-} */
 
 .form-box.error .error-text {
   visibility: visible;
@@ -120,18 +113,19 @@ iframe {
   transform: scale(0.95);
   transition: transform 0.2s linear;
 }
-
+/* pop up */
 .popup {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   position: absolute;
-  top: -300px;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 90vw;
   height: 200px;
+
   background-color: #fff;
   border-radius: 8px;
   bottom: 2px solid black;
@@ -149,8 +143,10 @@ iframe {
 }
 
 .show-popup {
-  top: 75%;
+  top: 85vh;
+  display: flex;
 }
+/* End of pop up */
 
 /* End of form */
 
@@ -164,7 +160,8 @@ iframe {
     width: 600px;
   }
   .show-popup {
-    top: 75vh;
+    top: 70vh;
+    display: flex;
   }
 
   .section--contact h2 {
