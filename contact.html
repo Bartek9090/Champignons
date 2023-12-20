@@ -10,12 +10,13 @@
       crossorigin="anonymous"
     ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="icon" type="img/png" href="assets/img/favicon.png" />
+    <link rel="icon" type="image/png" href="assets/img/favicon.png" />
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/contact.css" />
   </head>
 
   <body>
+    <div class="overlay"></div>
     <!-- End  of overlay -->
     <header class="header">
       <div class="header__logo">
@@ -43,10 +44,9 @@
 
     <section class="section section--contact">
       <h2>Contact Us</h2>
-
       <div class="section__subsection section__subsection--contact">
         <div class="article article--contact">
-          <h3>Address</h3>
+          <h3><i class="fas fa-map-marker-alt"></i>Address</h3>
           <p>
             Champignons breeding<br />
             Joe Doe
@@ -54,12 +54,12 @@
         </div>
 
         <div class="article article--contact">
-          <h3>Phone</h3>
+          <h3><i class="fas fa-phone"></i>Phone</h3>
           <a href="tel:+">+48 123 456 789</a>
         </div>
 
         <div class="article article--contact">
-          <h3>Email</h3>
+          <h3><i class="fas fa-envelope"></i>Email</h3>
           <a href="mailto:dummyMail@gmail.com">email@email.com</a>
         </div>
       </div>
@@ -71,19 +71,19 @@
           <div class="form__field form-box">
             <label for="username">Full Name *</label>
             <input id="username" type="text" placeholder="Enter Your Name" />
-            <p class="error-text">error</p>
+            <p class="error-text"></p>
           </div>
 
           <div class="form__field form-box">
             <label for="email">Email *</label>
             <input id="email" type="email" placeholder="Enter Your Email" />
-            <p class="error-text">error</p>
+            <p class="error-text"></p>
           </div>
 
           <div class="form__field form-box">
             <label for="phone">Phone *</label>
-            <input id="phone" type="number" placeholder="Enter Phone Number" />
-            <p class="error-text">error</p>
+            <input id="phone" type="tel" placeholder="Enter Phone Number" />
+            <p class="error-text"></p>
           </div>
 
           <div class="form__field form-box">
@@ -95,7 +95,7 @@
             ></textarea>
           </div>
 
-          <div class="controll-buttons">
+          <div class="control-buttons">
             <button class="clear">Clear</button>
             <button class="send">Send</button>
           </div>
@@ -117,7 +117,7 @@
     </section>
 
     <footer class="footer">
-      <h6 class="footer__slogan">Contact Us</h6>
+      <h6 class="footer__slogan"><a href="contact.html">Contact Us</a></h6>
 
       <p class="copyright">Copyright &copy; Bartek</p>
     </footer>

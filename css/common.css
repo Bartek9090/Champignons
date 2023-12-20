@@ -171,6 +171,10 @@ a {
   font-size: 0.8rem;
 }
 
+.footer a {
+  color: #fff;
+}
+
 .img-container img {
   border-radius: 0.5rem;
   box-shadow: 0 0 0.3rem 0.2rem #eaeaea;
